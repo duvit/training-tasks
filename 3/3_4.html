@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 4) Дано натуральне число. Знайти та вивести на сторінку всі його дільники.
+    - Визначити кількість його парних дільників
+    - Знайти суму його парних дільників	 -->
+
+    <script>
+
+        let value = prompt("Enter natural number:");
+        let index = 0;
+        let evenDiv = 0;
+
+
+        for (let i = 0; i < value; i++) {
+            if (value % i == 0) {
+                if (i % 2 == 0) {
+                    index += 1;
+                    evenDiv += i;
+                }
+
+                console.log(i);
+            }
+
+        };
+
+        console.log("number of even dividers: " + index);
+        console.log("sum of even dividers: " + evenDiv);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

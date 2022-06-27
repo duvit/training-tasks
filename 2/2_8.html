@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let value = Number(prompt("Введіть рік:"));
+        
+
+        if (value % 4 == 0) {
+            if (value % 100 == 0 && value % 400 !== 0) {
+                alert("Рік звичайний");
+            }
+            else {
+                alert("Рік високосний!");
+            }
+        }
+        else 
+        {
+            alert("Рік звичайний.");
+        };
+
+
+
+
+    </script>
+</body>
+
+</html>

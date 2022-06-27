@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let arr = new Array();
+
+        let length = Number(prompt("Enter array length: "));
+
+        for (let i = 0; i < length; i++) {
+            let el = prompt("Enter array values: ");
+
+            arr.push(el);
+        }
+
+        function compareNumeric(a, b) {
+            if (a > b) return 1;
+            if (a == b) return 0;
+            if (a < b) return -1;
+        }
+
+        arr.sort(compareNumeric);
+
+      
+        arr.length[length];
+
+        console.log(arr);
+
+        arr.splice(2, 3);
+
+        console.log(arr);
+
+    </script>
+
+</body>
+
+</html>
